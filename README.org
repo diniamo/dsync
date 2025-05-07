@@ -1,0 +1,20 @@
+* DSync
+
+DSync is a dead-simple P2P file synchronization tool using the SSH protocol.
+
+The synchronization is 2-way, and the algorithm used to determine the correct version to use simply just looks at the mtime (last modified time) of a file on both ends, and the one with the later one gets synchronized to the other side.
+
+* Building / Running
+
+To build, simply run:
+
+#+BEGIN_SRC sh
+go build cmd/dsync/main.go
+#+END_SRC
+
+To run, execute the resulting file, or the following command directly:
+
+#+BEGIN_SRC sh
+go run cmd/dsync/main.go
+#+END_SRC
+
