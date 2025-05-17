@@ -96,7 +96,7 @@ func WalkLocal(local string, ftp *sftp.Client, remote string) {
 			continue
 		}
 
-		cmp := localStat.ModTime().Compare(remoteStat.ModTime())
+		cmp := localStat.ModTime().Truncate(time.Second).Compare(remoteStat.ModTime().Truncate(time.Second))
 		if cmp == -1 {
 			paddedPrint("remote -> local", relative)
 
