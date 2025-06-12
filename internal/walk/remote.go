@@ -6,9 +6,8 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/diniamo/dsync/internal/log"
-
 	"github.com/pkg/sftp"
+	log "github.com/diniamo/glog"
 )
 
 func WalkRemote(ftp *sftp.Client, remote, local string) {

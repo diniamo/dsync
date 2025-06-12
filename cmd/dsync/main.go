@@ -6,8 +6,9 @@ import (
 	osUser "os/user"
 	"path/filepath"
 
+	log "github.com/diniamo/glog"
+
 	"github.com/diniamo/dsync/internal/conn"
-	"github.com/diniamo/dsync/internal/log"
 	"github.com/diniamo/dsync/internal/walk"
 )
 
