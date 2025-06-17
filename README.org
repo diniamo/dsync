@@ -9,12 +9,12 @@ The synchronization is 2-way, and the algorithm used to determine the correct ve
 To build, simply run:
 
 #+BEGIN_SRC sh
-go build cmd/dsync/main.go
+go build ./cmd/dsync
 #+END_SRC
 
 To run, execute the resulting file, or the following command directly:
 
 #+BEGIN_SRC sh
-go run cmd/dsync/main.go
+go run ./cmd/dsync
 #+END_SRC
 
