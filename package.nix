@@ -1,13 +1,13 @@
-{buildGoModule, commit, lib, go}:
+{ buildGoModule, commit, lib, go }:
 buildGoModule {
   pname = "dsync";
   version = "0-unstable-${commit}";
 
   src = lib.cleanSource ./.;
   
-  vendorHash = "sha256-rzaO0A3jQ5uvFM9nSOBpBH89MVQSUtWu58OCwZD1OLo=";
+  vendorHash = "sha256-rVX3aSy9NkTTvhhysRLAUlS9C09ajUnelOAW273Y+Bw=";
 
-  subPackages = ["cmd/dsync"];
+  subPackages = [ "cmd/dsync" ];
 
   meta = {
     description = "Dead-simple P2P file synchronization tool using the SSH protocol";
