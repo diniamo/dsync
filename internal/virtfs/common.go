@@ -8,7 +8,6 @@ import (
 	"path/filepath"
 	"time"
 
-	log "github.com/diniamo/glog"
 	"github.com/kr/fs"
 )
 
@@ -29,7 +28,6 @@ type VirtualFS interface {
 func New(spec, port string) (VirtualFS, error) {
 	user, host, path := parseSpec(spec)
 
-	log.Notef("pars: %s -> %s, %s, %s", spec, user, host, path)
 	if path == "" {
 		return nil, errors.New("missing path")
 	}
