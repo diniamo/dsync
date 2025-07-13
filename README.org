@@ -2,7 +2,7 @@
 
 DSync is a dead-simple P2P file synchronization tool using the SSH protocol.
 
-The synchronization is 2-way, and the algorithm used to determine the correct version to use simply just looks at the mtime (last modified time) of a file on both ends, and the one with the later one gets synchronized to the other side.
+The algorithm used to determine the correct version to use simply looks at the mtime (last modified time) of a file on all ends, and the one with the latest gets synchronized to the rest.
 
 * Building / Running
 
